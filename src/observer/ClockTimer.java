@@ -54,6 +54,7 @@ public class ClockTimer extends Observable implements Runnable{
             this.second = 0;
             this.minute++;
             if(this.minute >= 60){
+                this.minute = 0;
                 this.hour++;
                 if(this.hour >=24) this.hour = 0;
             }
